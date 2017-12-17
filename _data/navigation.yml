@@ -1,0 +1,19 @@
+- title: Home
+  url: /index.html
+- title: De Hut
+  url: /dehut.html
+- title: Over Ons
+  url: /overons.html
+- title: Info
+  url: /info
+  sublinks:
+    - title: FAQ
+      url: /info/faq.html
+    - title: Activiteiten
+      url: /info/activiteiten.html
+    - title: Recensies
+      url: /info/recensies.html
+- title: Reservatie
+  url: /reservatie.html
+- title: Contact
+  url: /contact.html
