@@ -8,5 +8,8 @@
 .sprite {
     height: 60px;
     width: 60px;
-    background-image: url("../../images/sprite.png")
+    background-image: url("../../images/sprite.png");
+    .sprite:hover {
+        background-position: -60px 0px;
+        }
     }
