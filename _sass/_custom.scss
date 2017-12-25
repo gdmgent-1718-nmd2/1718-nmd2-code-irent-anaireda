@@ -1,23 +1,152 @@
+// ========= COLORS ===============
+$wit: white;
+$lichtgrijs: rgb(226, 226, 226);
+// ================================
+
+// ========= ALGEMEEN =============
 body {
     font-family: 'Barlow', sans-serif;
     }
-
+a{
+    text-decoration: none;
+    color: $white;
+    }
+.mb40 {
+    margin-bottom: 40px;
+    }
 strong {
     font-weight: bolder;
     }
-
-.slideshow {
-    width: auto;
-    .carousel-inner{
-        height: 400px;
+.mdi {
+    ::before{
+        font-size: 24px;
+        line-height: 14px;
+        .btn {
+            position: relative;
+            top: 4px;
+            }
+        }
+    .dropdown-menu {
+        width: 18px;
+        ::before {
+            position: relative;
+            top: 4px;
+            left: -8px;
+            }
+        }
+    .nav::before {
+        position: relative;
+        top: 4px;
+        }
+    .breadcrumb {
+        ::before {
+            position: relative;
+            top: 4px;
+            }
+        a:hover {
+            text-decoration: none;
+            span {
+                text-decoration: underline;
+                }
+            }
+        }
+    .alert::before {
+        position: relative;
+        top: 4px;
+        margin-right: 2px;
+        }
+    .input-group-addon::before {
+        position: relative;
+        top: 3px;
+        }
+    .navbar-brand::before {
+        position: relative;
+        top: 2px;
+        margin-right: 2px;
+        }
+    .list-group-item::before {
+        position: relative;
+        top: 3px;
+        left: -3px
         }
     }
+.slideshow {
+    .carousel-inner{
+        height: 400px;
+        width: auto;
+        align-items: center;
+        }
+    }
+// ================================
 
+// ========= NAV&FOOTER ===========
+.dropdown-menu {
+    background-color: #4d545b;
+    }
+.adres {
+    border-top: 1px solid $lichtgrijs;
+    border-bottom: 1px solid $lichtgrijs;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: $wit;
+    }
 .sprite {
     height: 60px;
     width: 60px;
     background-image: url("../../images/sprite.png");
-    .sprite:hover {
-        background-position: -60px 0px;
+    &.fb {
+        background-position: 0px 0px;
+        &:hover {
+            background-position: 0px 120px;
+            }
+        &:active {
+            background-position: 0px 60px;
+            }
+        }
+    &.gp {
+        background-position: 60px 0px;
+        &:hover {
+            background-position: 60px 120px;
+            }
+        &:active {
+            background-position: 60px 60px;
+            }
+        }
+    &.ta {
+        background-position: 120px 0px;
+        &:hover {
+            background-position: 120px 120px;
+            }
+        &:active {
+            background-position: 120px 60px;
+            }
+        }
+    &.tw {
+        background-position: 180px 0px;
+        &:hover {
+            background-position: 180px 120px;
+            }
+        &:active {
+            background-position: 180px 60px;
+            }
         }
     }
+// ================================
+
+// ========= RESERVATIE ===========
+form {
+    label {
+        margin-top: 11px;
+        margin-bottom: 0;
+        margin-left: 17px;
+        }
+    .form-row{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        background-color: $lichtgrijs;
+        border-radius: 4px;
+        }
+    }
+// ===============================
