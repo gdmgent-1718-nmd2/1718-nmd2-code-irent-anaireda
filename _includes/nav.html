@@ -1,19 +1,8 @@
 {% assign nodes = site.pages | where: 'layout', 'default' %}
-<!-- <navbar>
-    <nav class="nav nav-pills nav-justified">
-        {%- for node in nodes %}
-            {%- assign is_active = false %}
-            {%- if page.url == node.url %}
-                {% assign is_active = true %}
-            {%- endif %}
-        <a class="nav-link {% if is_active %} active {% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
-        {%- endfor %}
-    </nav>
-</navbar> -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <!-- websitelogo -->
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.html"><img src="../../images/logo.png"></a>
     
     <!-- hamburger icoon -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

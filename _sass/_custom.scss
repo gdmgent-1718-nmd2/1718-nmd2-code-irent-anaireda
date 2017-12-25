@@ -1,15 +1,26 @@
 // ========= COLORS ===============
-$wit: white;
-$lichtgrijs: rgb(226, 226, 226);
+$licht: rgb(224, 225, 160);
+$bruin: rgb(136, 67, 15);
+$lichtbruin: rgb(211, 143, 48);
+$groen: rgb(89, 104, 39);
+$donker: rgb(19, 27, 15);
 // ================================
+
+
+
 
 // ========= ALGEMEEN =============
 body {
     font-family: 'Barlow', sans-serif;
+    color: $donker;
     }
 a{
     text-decoration: none;
-    color: $white;
+    color: $licht;
+    }
+.btn {
+    color: $licht;
+    background-color: $groen;
     }
 .mb40 {
     margin-bottom: 40px;
@@ -77,20 +88,39 @@ strong {
         align-items: center;
         }
     }
+.jumbotron{
+    background-color: $licht;
+    }
+.alert {
+    background-color: $lichtbruin;
+    color: white;
+}
 // ================================
 
+
+
+
 // ========= NAV&FOOTER ===========
+.navbar-dark{
+    background-color: $donker;
+    color: $licht;
+    }
 .dropdown-menu {
-    background-color: #4d545b;
+    background-color: $licht;
+    color: $donker;
+    .dropdown-item:hover {
+        background-color: $donker;
+        color: $licht;
+        }
     }
 .adres {
-    border-top: 1px solid $lichtgrijs;
-    border-bottom: 1px solid $lichtgrijs;
+    border-top: 1px solid $licht;
+    border-bottom: 1px solid $licht;
     margin-top: 20px;
     padding-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: $wit;
+    color: $licht;
     }
 .sprite {
     height: 60px;
@@ -135,18 +165,28 @@ strong {
     }
 // ================================
 
+
+
+
 // ========= RESERVATIE ===========
 form {
     label {
         margin-top: 11px;
         margin-bottom: 0;
         margin-left: 17px;
+        color: $groen;
+        }
+    h4 {
+        color: $groen;
         }
     .form-row{
-        padding-bottom: 20px;
+        padding: 20px;
         margin-bottom: 20px;
-        background-color: $lichtgrijs;
+        border: 1px solid $licht;
         border-radius: 4px;
+        }
+    .form-control {
+        border-color: $licht;
         }
     }
 // ===============================
