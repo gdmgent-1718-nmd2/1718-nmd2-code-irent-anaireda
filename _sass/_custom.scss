@@ -25,6 +25,9 @@ a{
 .mb40 {
     margin-bottom: 40px;
     }
+.mt40 {
+    margin-top: 40px;
+    }
 strong {
     font-weight: bolder;
     }
@@ -95,6 +98,9 @@ strong {
     background-color: $lichtbruin;
     color: white;
 }
+.boeknu {
+    padding: 20px;
+}
 // ================================
 
 
@@ -104,10 +110,16 @@ strong {
 .navbar-dark{
     background-color: $donker;
     color: $licht;
+    .nav-link {
+        color: $licht !important;
+        }
+    .navbar-toggler-icon {
+        background-image: url(../../images/hamburger.png)
+        }
     }
 .dropdown-menu {
-    background-color: $licht;
-    color: $donker;
+    background-color: $groen;
+    color: $licht;
     .dropdown-item:hover {
         background-color: $donker;
         color: $licht;
@@ -125,6 +137,7 @@ strong {
 .sprite {
     height: 60px;
     width: 60px;
+    margin-right: 10px;
     background-image: url("../../images/sprite.png");
     &.fb {
         background-position: 0px 0px;
@@ -189,4 +202,13 @@ form {
         border-color: $licht;
         }
     }
-// ===============================
+// ================================
+
+
+
+
+// ========= INDEX ================
+.card {
+    border-color: $licht;
+}
+// ================================

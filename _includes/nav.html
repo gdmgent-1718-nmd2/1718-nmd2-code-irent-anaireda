@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark">
     <!-- websitelogo -->
-    <a class="navbar-brand" href="index.html"><img src="../../images/logo.png"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/logo-licht.png"></a>
     
     <!-- hamburger icoon -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +10,7 @@
     </button>
   
     <!-- hoofdnavigatie -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
           {% assign links = site.data.navigation %}
           {% for link in links %}
@@ -21,7 +21,7 @@
               {% if link.sublinks %}
                   <li class="nav-item dropdown {{ class }}">
                       <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle {{ class }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu  text-right">
                           {% for sublink in link.sublinks %}
                                   <li class="dropdown-item">
                                       <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
