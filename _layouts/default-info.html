@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }} | The Oak Room</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+
+</head>
+<body>
+{% include nav-info.html %}
+{{ content }}
+{% include footer-info.html %}
+{% include scripts-bottom.html %}
+</body>
+</html>

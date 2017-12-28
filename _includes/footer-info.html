@@ -1,0 +1,56 @@
+<nav class="navbar navbar-dark">
+    <ul class="navbar-nav mr-auto col-12 text-center">
+    {% assign links = site.data.navigation %}
+    {% for link in links %}
+        {% assign class = nil %}
+        {% if link.url contains page.url %}
+            {% assign class = ' active' %}
+        {% endif %}
+        {% if link.sublinks %}
+            <li class="nav-item dropdown {{ class }}">
+                <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle {{ class }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    {% for sublink in link.sublinks %}
+                            <li class="dropdown-item">
+                                <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                            </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% else %}
+            <li class="nav-item{{ class }}">
+                <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+    <div class="col-12 text-center adres">
+        <p>
+            Boslaan 15<br>
+            1000 Brussel<br>
+            0475/126578<br>
+            info@oakroom.be
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.facebook.com"><div class="sprite fb p-2"></div></a>
+                    <a href="https://www.twitter.be"><div class="sprite tw p-2"></div></a>
+                    <a href="https://plus.google.com"><div class="sprite gp p-2"></div></a>
+                    <a href="https://tripadvisor.be"><div class="sprite ta p-2"></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col justify-content-end">
+                {%- if site.show-style-guide %}
+                <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
+                {%- endif %}
+            </div>
+        </div>
+    </div>
+</nav>
