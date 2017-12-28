@@ -101,8 +101,8 @@ strong {
     }
 .slideshow {
     .carousel-inner{
-        height: 400px;
-        width: auto;
+        height: auto;
+        width: 100%;
         align-items: center;
         }
     }
@@ -267,5 +267,12 @@ form {
 .maps {
     height: 300px;
     width: 600px;
-}
+    }
+.contact-adres {
+    color: $lichtbruin;
+    font-weight: bolder;
+    }
+.mb70 {
+    margin-bottom: 70px;
+    }
 // ================================================================================================

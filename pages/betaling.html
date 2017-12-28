@@ -7,5 +7,67 @@ title    : Betaling
     <h1 class="display-3">{{page.title}}</h1>
 </div>
 <div class="container">
-    <a class="btn btn-primary" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4 documentation</a>
+    <div class="row">
+        <div class="col">
+            <form>
+                <div class="form-row">
+                    <h4 class="col-12">Naam</h4>
+                    <div class="col-md-6 mb11">
+                        <label for="validationDefault01">Voornaam</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Peter" required>
+                    </div>
+                    <div class="col-md-6 mb11">
+                        <label for="validationDefault02">Achternaam</label>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Peters" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <h4 class="col-12">Contactgegevens</h4>
+                    <div class="col-md-6 mb11">
+                        <label for="validationDefault04">Telefoonnummer</label>
+                        <input type="text" class="form-control" id="validationDefault04" placeholder="012/123456" required>
+                    </div>
+                    <div class="col-md-6 mb11">
+                        <label for="validationDefault06">E-mailadres</label>
+                        <input type="text" class="form-control" id="validationDefault06" placeholder="iemand@voorbeeld.be" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <h4 class="col-12">Adres</h4>
+                    <div class="col-md-6 mb11">
+                        <label for="validationDefault09">Straatnaam</label>
+                        <input type="text" class="form-control" id="validationDefault09" placeholder="Boslaan" required>
+                    </div>
+                    <div class="col-md-3 mb11">
+                        <label for="validationDefault08">Huisnummer</label>
+                        <input type="text" class="form-control" id="validationDefault08" placeholder="15" required>
+                    </div>
+                    <div class="col-md-3 mb11">
+                        <label for="validationDefault07">Bus</label>
+                        <input type="text" class="form-control" id="validationDefault07" placeholder="a">
+                    </div>
+                    <div class="col-md-3 mb11">
+                        <label for="validationDefault05">Postcode</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="1000" required>
+                        <div class="invalid-feedback">
+                            Geef een geldige postcode op!
+                        </div>
+                    </div>
+                    <div class="col-md-9 mb11">
+                        <label for="validationDefault03">Gemeente</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="Brussel" required>
+                        <div class="invalid-feedback">
+                            Geef een geldige gemeente op!
+                        </div>
+                    </div>
+                </div>
+                <div class="alert">
+                    <h6>Valideer eerst voor je verdergaat!</h6>
+                </div>
+                <button class="btn mb40" type="button"><a href="index.html">Ga terug</a></button>
+                <button class="btn mb40" type="submit">Valideer!</button>
+                <button class="btn mb40" type="button"><a href="bedankt.html">Ga verder</a></button>
+            </form>
+        </div>
+    </div>
 </div>
