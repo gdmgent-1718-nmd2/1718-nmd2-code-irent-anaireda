@@ -21,6 +21,18 @@ a{
 .btn {
     color: $licht;
     background-color: $groen;
+    &:hover {
+        color: white;
+        background-color: $lichtbruin;
+        }
+    &:active {
+        color: white;
+        background-color: $bruin;
+        }
+    &:focus {
+        border: 0;
+        box-shadow: 0 0 0 0.2rem $bruin;
+        }
     }
 .mb11 {
     margin-bottom: 11px;
@@ -202,7 +214,11 @@ form {
         border-radius: 4px;
         }
     .form-control {
-        border-color: $licht;
+        border-color: $licht !important;
+        &:focus {
+            border: 0;
+            box-shadow: 0 0 0 0.2rem $bruin;
+        }
         }
     }
 // ================================================================================================
@@ -230,23 +246,26 @@ form {
         border:0;
         outline:0;
         background-color: transparent;
-        z-index: -2;
-        height: 24px;
-        width: auto;
-        &:hover{
-            background-image: url(../../images/ster.png);
-            background-position: 7px 4px;
-            z-index: -1;
-            
-            }
-        &.active{
-            -webkit-animation: 500ms 1;
-            -moz-animation: 500ms 1; 
-            -o-animation: 500ms 1; 
-            animation: 500ms 1; 
-            animation-delay: 250ms;
-            animation-fill-mode: forwards;
+        padding-top: 5px;
+        .stersprite {
+            height: 24px;
+            width: 24px;
+            background-image: url("../../images/sterren.png");
+            background-position: 24px 0px;
+            &:hover, :active {
+                background-position: 2px 0px;
+                }
             }
         }
     }
+// ================================================================================================
+
+
+
+
+// ========= CONTACT ===========================================================================
+.maps {
+    height: 300px;
+    width: 600px;
+}
 // ================================================================================================
